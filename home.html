@@ -12,54 +12,55 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-
-
     <title>CBM Test</title>
   </head>
   <body>
-    
+
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <div>
-                <button type="button" class="btn btn-primary" onclick="toggleColumn()">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center projectMenu">
+                <button class="btn btn-outline-secondary border20" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
                     <i class="fas fa-bars"></i>
                 </button>
-                <span class="ms-2">Project</span>
-            </div>
-            <div class="welcome-container">
-                <span><b>Welcome,</b> Rifki Andriantono</span>
-                <a href=""><i class="fas fa-user-circle fa-lg text-secondary"></i></a>
+                <p class="fw-bold fs-5 ms-2 my-auto">Project</p>
+            </div>            
+            
+            <div class="d-flex align-items-center projectMenu">
+                <span class="ms-2 my-auto"><b>Welcome,</b> Rifki Andriantono</span>
+                <a href=""><i class="fas fa-user-circle fa-lg text-primary"></i></a>
             </div>
         </div>
     </nav>
-    
-    
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar / Left Column -->
-            <div id="leftColumn" class="col-lg-3 col-md-4 col-sm-12 bg-secondary text-light">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Menu 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu 3</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Main Content / Right Column -->
-            <div id="rightColumn" class="col-lg-9 col-md-8 col-sm-12">
-                <div class="p-4">
-                    <h3>Main Content</h3>
-                    <p>Ini adalah area konten utama halaman Anda.</p>
-                </div>
-            </div>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Sidebar Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">Link 1</a></li>
+                <li class="list-group-item"><a href="#">Link 2</a></li>
+                <li class="list-group-item"><a href="#">Link 3</a></li>
+                <li class="list-group-item"><a href="#">Link 4</a></li>
+            </ul>
         </div>
     </div>
+
+    <div class="container-fluid darkwhite">
+        <p>text</p>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
     
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+   
   </body>
 </html>

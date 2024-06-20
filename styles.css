@@ -54,8 +54,31 @@
     color: #fff; /* Warna teks untuk link dalam sidebar */
 }
 
-.welcome-container{
-    display: flex;
-    align-items: center; /* Posisikan elemen secara vertikal */
-    gap: 25px; /* Jarak antar elemen */
+.darkwhite{
+    background-color: #f1f1f1;
+}
+
+.darkwhite2{
+    background-color: #dae6f7;
+}
+
+.btn.border20{
+    border-radius: 20px;
+}
+
+.offcanvas-body {
+    padding: 1rem;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+
+.projectMenu{
+    gap: 15px;
 }

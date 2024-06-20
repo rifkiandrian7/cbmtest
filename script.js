@@ -27,3 +27,4 @@ function toggleColumn() {
         rightColumn.classList.add('col-lg-4');
     }
 }
+
