@@ -28,7 +28,7 @@
             
             <div class="d-flex align-items-center gap20">
                 <span class="ms-2 my-auto"><b>Welcome,</b> Rifki Andriantono</span>
-                <a href=""><img src="image_assets\169394.jpg" class="photoProfile"></a>
+                <a href=""><img src="image_assets\169394.jpg" class="photoProfile rounded-circle"></a>
             </div>
         </div>
     </nav>
@@ -36,168 +36,182 @@
     <!-- Offcanvas Sidebar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Sidebar Title</h5>
+            <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Apps</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="#">Link 1</a></li>
-                <li class="list-group-item"><a href="#">Link 2</a></li>
-                <li class="list-group-item"><a href="#">Link 3</a></li>
-                <li class="list-group-item"><a href="#">Link 4</a></li>
-            </ul>
+            <div class="card border-0">
+                <div class="card-body">
+                  <p class="card-title fw-bold">Menu</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-action"><a href="">Project</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="">Lesson Learned</a></li>
+                  </ul>
+                  <p class="card-title mt-4 fw-bold">Master Data</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-action"><a href="">Status</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="">Material</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="">Project Type</a></li>
+                  </ul>
+                </div>
+            </div>
+              
         </div>
     </div>
 
         <!-- button horizontal -->
         <div class="container-fluid mt-5">
-            <div class="d-flex justify-content-between align-items-center my-3 projectMenu">
-                <div class="d-flex projectMenu">
-                    <button class="btn btn-primary rounded-pill btnnew">
-                        <i class="fas fa-plus me-2"></i> New Project
-                    </button>
-                    <button class="btn btn-primary rounded-pill btnnew">
-                        <i class="fas fa-file-excel me-2"></i> Export to XLS
-                    </button>
-                    <button class="btn btn-primary rounded-pill btnnew">
-                        <i class="fas fa-file-csv me-2"></i> Export to CSV
-                    </button>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center my-3">
+                <div class="d-flex flex-grow-1 justify-content-between projectMenu mb-3 mb-md-0">
+                    <div class="d-flex">
+                        <button class="btn btn-primary rounded-pill me-2">
+                            <i class="fas fa-plus me-2"></i> New Project
+                        </button>
+                        <button class="btn btn-primary rounded-pill me-2">
+                            <i class="fas fa-file-excel me-2"></i> Export to XLS
+                        </button>
+                        <button class="btn btn-primary rounded-pill">
+                            <i class="fas fa-file-csv me-2"></i> Export to CSV
+                        </button>
+                    </div>
                 </div>
-                <div class="d-flex projectMenu">
-                    <form class="d-flex">
+                <div class="d-flex flex-grow-1 justify-content-end projectMenu">
+                    <form class="d-flex me-2">
                         <div class="input-group">
                             <input class="form-control border20Left" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-primary border20Right" type="submit"><i class="fas fa-search"></i></button>
                         </div>
                     </form>
-                    
-                    <button class="btn btn-primary rounded-pill">
+                    <button class="btn btn-outline-primary rounded-pill me-2">
                         <i class="fas fa-list-alt"></i>
                     </button>
-
-                    <button class="btn btn-outline-primary rounded-pill">
+                    <button class="btn btn-primary rounded-pill">
                         <i class="fas fa-columns"></i>
                     </button>
                 </div>
             </div>
         </div>
+        
+        
         <!-- button horizontal -->
 
         <div class="container-fluid mt-5">
             <div class="row">
                 <!-- Column 1 -->
                 <div class="col-lg-3">
-                    <div class="d-flex gap10 mb-3">
-                        <span>
-                            <i class="fas fa-cog text-primary"></i>
-                        </span>
-                        <h5 class="fw-bold">Implementasi</h5>
-                        <div class="border px-2 my-auto rounded mb-1">1</div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex align-items-center gap10">
+                            <span>
+                                <i class="fas fa-flag-checkered text-primary"></i>
+                            </span>
+                            <h5 class="fw-bold">Pemeliharaan</h5>
+                            <div class="border px-2 my-auto rounded mb-1">1</div>
+                        </div>
+                        <button class="btn btn-outline-secondary rounded-pill">New</button>
                     </div>
                     <div class="card mb-3 border20">
-                        <div class="card-header card-header-custom">Team Meeting</div>
+                        <div class="card-header card-header-custom">Operation & Maintenance</div>
                         <div class="card-body">
                             <p>Pengadaan Kontruksi Renovasi Rumah Dinas KPP Pratama Sintang</p>
-                            <div class="row">
-                                <div class="col-md-4 profile-column">
-                                    <!-- Foto profil -->
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                        <a href=""><img src="image_assets/169394.jpg" class="photoProfile rounded-circle"></a>
-                                        </div>
-                                        <div class="col-md-2">
-                                        <a href=""><img src="image_assets/169394.jpg" class="photoProfile rounded-circle"></a>
-                                        </div>
-                                        <div class="col-md-2">
-                                        <a href=""><img src="image_assets/169394.jpg" class="photoProfile rounded-circle"></a>
-                                        </div>
-                                        <div class="col-md-2">
-                                        <a href=""><img src="image_assets/169394.jpg" class="photoProfile rounded-circle"></a>
-                                        </div>
-                                        <div class="col-md-2">
-                                        <a href=""><img src="image_assets/169394.jpg" class="photoProfile rounded-circle"></a>
-                                        </div>
-                                    </div>
+                            <div class="row align-items-center">
+                                <div class="col-4 d-flex align-items-center gap10">
+                                    <i class="fas fa-user-circle fa-lg text-info"></i>
+                                    <span class="ml-2 fw-bold">5 People</span>
                                 </div>
-                                <div class="col-md-8 text-end">
-                                    <!-- Tanggal -->
-                                    <p class="my-auto">29 Oktober 2024</p>
+                                <div class="col-8 d-flex align-items-center justify-content-end gap10">
+                                    <i class="fas fa-calendar fa-lg text-info"></i>
+                                    <span class="ml-2 fw-bold">29 Oktober 2024</span>
                                 </div>
-                            </div>                              
-                        </div>
-                    </div>
-                    <div class="card mb-3 border20">
-                        <div class="card-header card-header-custom">Profile Redesign</div>
-                        <div class="card-body">
-                            <!-- Content for Profile Redesign card -->
+                            </div>               
                         </div>
                     </div>
                 </div>
                 <!-- Column 2 -->
                 <div class="col-lg-3">
-                    <div class="d-flex gap10 mb-3">
-                        <span>
-                            <i class="fas fa-check-circle text-primary"></i>
-                        </span>
-                        <h5 class="fw-bold">Uji Fungsi</h5>
-                        <div class="border px-2 my-auto rounded mb-1">1</div>
-                    </div>
-                    <div class="card mb-3 border20">
-                        <div class="card-header card-header-custom">Design Project</div>
-                        <div class="card-body">
-                            <!-- Content for Design Project card -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex align-items-center gap10">
+                            <span>
+                                <i class="fas fa-flag-checkered text-primary"></i>
+                            </span>
+                            <h5 class="fw-bold">Uji Fungsi</h5>
+                            <div class="border px-2 my-auto rounded mb-1">1</div>
                         </div>
+                        <button class="btn btn-outline-secondary rounded-pill">New</button>
                     </div>
                     <div class="card mb-3 border20">
-                        <div class="card-header card-header-custom">Combine Tasks</div>
+                        <div class="card-header card-header-custom">Capital Based</div>
                         <div class="card-body">
-                            <!-- Content for Combine Tasks card -->
+                            <p>Pembangunan Reservoir SPAM Kota Manado(NUWSP)</p>
+                            <div class="row align-items-center">
+                                <div class="col-4 d-flex align-items-center gap10">
+                                    <i class="fas fa-user-circle fa-lg text-info"></i>
+                                    <span class="ml-2 fw-bold">8 People</span>
+                                </div>
+                                <div class="col-8 d-flex align-items-center justify-content-end gap10">
+                                    <i class="fas fa-calendar fa-lg text-info"></i>
+                                    <span class="ml-2 fw-bold">21 Juni 2024</span>
+                                </div>
+                            </div>               
                         </div>
                     </div>
                 </div>
                 <!-- Column 3 -->
                 <div class="col-lg-3">
-                    <div class="d-flex gap10 mb-3">
-                        <span>
-                            <i class="fas fa-tools text-primary"></i>
-                        </span>
-                        <h5 class="fw-bold">Pemeliharaan</h5>
-                        <div class="border px-2 my-auto rounded mb-1">1</div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex align-items-center gap10">
+                            <span>
+                                <i class="fas fa-flag-checkered text-primary"></i>
+                            </span>
+                            <h5 class="fw-bold">Pemeliharaan</h5>
+                            <div class="border px-2 my-auto rounded mb-1">2</div>
+                        </div>
+                        <button class="btn btn-outline-secondary rounded-pill">New</button>
                     </div>
                     <div class="card mb-3 border20">
-                        <div class="card-header card-header-custom">Main Screens</div>
+                        <div class="card-header card-header-custom">Operation & Maintenance</div>
                         <div class="card-body">
-                            <!-- Content for Main Screens card -->
+                            <p>Rehab PAUD, Mess Rektor, dari Pagar Mess UNIB</p>
+                            <div class="row align-items-center">
+                                <div class="col-4 d-flex align-items-center gap10">
+                                    <i class="fas fa-user-circle fa-lg text-info"></i>
+                                    <span class="ml-2 fw-bold">8 People</span>
+                                </div>
+                                <div class="col-8 d-flex align-items-center justify-content-end gap10">
+                                    <i class="fas fa-calendar fa-lg text-info"></i>
+                                    <span class="ml-2 fw-bold">21 Juni 2024</span>
+                                </div>
+                            </div>               
                         </div>
                     </div>
                     <div class="card mb-3 border20">
-                        <div class="card-header card-header-custom">Get Access</div>
+                        <div class="card-header card-header-custom">Capital Based</div>
                         <div class="card-body">
-                            <!-- Content for Get Access card -->
+                            <p>Rehabilitasi Pos Pantau Palopo</p>
+                            <div class="row align-items-center">
+                                <div class="col-4 d-flex align-items-center gap10">
+                                    <i class="fas fa-user-circle fa-lg text-info"></i>
+                                    <span class="ml-2 fw-bold">8 People</span>
+                                </div>
+                                <div class="col-8 d-flex align-items-center justify-content-end gap10">
+                                    <i class="fas fa-calendar fa-lg text-info"></i>
+                                    <span class="ml-2 fw-bold">21 Juni 2024</span>
+                                </div>
+                            </div>               
                         </div>
                     </div>
                 </div>
                 <!-- Column 4 -->
                 <div class="col-lg-3">
-                    <div class="d-flex gap10 mb-3">
-                        <span>
-                            <i class="fas fa-flag-checkered text-primary"></i>
-                        </span>
-                        <h5 class="fw-bold">Selesai</h5>
-                        <div class="border px-2 my-auto rounded mb-1">1</div>
-                    </div>
-                    <div class="card mb-3 border20">
-                        <div class="card-header card-header-custom">Main Screens</div>
-                        <div class="card-body">
-                            <!-- Content for Main Screens card -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex align-items-center gap10">
+                            <span>
+                                <i class="fas fa-flag-checkered text-primary"></i>
+                            </span>
+                            <h5 class="fw-bold">Selesai</h5>
+                            <div class="border px-2 my-auto rounded mb-1">0</div>
                         </div>
-                    </div>
-                    <div class="card mb-3 border20">
-                        <div class="card-header card-header-custom">Get Access</div>
-                        <div class="card-body">
-                            <!-- Content for Get Access card -->
-                        </div>
-                    </div>
+                        <button class="btn btn-outline-secondary rounded-pill">New</button>
+                    </div>                    
                 </div>
                 <!-- Column 5 -->
                 <div class="col-lg-3">

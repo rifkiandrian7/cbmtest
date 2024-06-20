@@ -110,9 +110,11 @@
 }
 
 .photoProfile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 35px;
     width: 35px;
-    border-radius: 20px;
 }
 
 .btnnew{
@@ -139,9 +141,9 @@
     border-top-right-radius: 20px !important;
 }
 
-
-.profile-column img {
-width: 35px; /* Lebar foto profil */
-height: auto;
-gap: -10px; /* Geser foto profil ke atas */
+.datediv{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 35px;
 }
