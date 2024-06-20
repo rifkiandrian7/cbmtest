@@ -1,3 +1,7 @@
+.blacktext {
+    color: #333333; /* Warna hitam */
+}
+
 .bg-login{
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(230,245,255,1) 50%, rgba(220,231,255,1) 100%);
@@ -26,6 +30,24 @@
 }
 
 .border20{
+    border-radius: 20px !important;
+}
+
+.border20Left{
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+.border20Right{
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.form-control.border20 {
+    border-radius: 20px !important; /* Kombinasi kelas untuk spesifikasi yang lebih baik */
+}
+
+.btn.border20{
     border-radius: 20px;
 }
 
@@ -62,10 +84,6 @@
     background-color: #dae6f7;
 }
 
-.btn.border20{
-    border-radius: 20px;
-}
-
 .offcanvas-body {
     padding: 1rem;
 }
@@ -80,5 +98,50 @@
 }
 
 .projectMenu{
-    gap: 15px;
+    gap: 5px;
+}
+
+.gap10{
+    gap: 10px;
+}
+
+.gap20{
+    gap: 20px;
+}
+
+.photoProfile{
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+}
+
+.btnnew{
+    padding: 5px 20px !important;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.column-header button:hover {
+    background-color: var(--bs-primary);
+    color: #f3f8fe;
+}
+
+.card-header-custom {
+    background-color: #f1f1f1 !important;
+    /* color: var(--bs-primary); */
+    border-bottom: 0px solid var(--bs-primary) !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+
+.profile-column img {
+width: 35px; /* Lebar foto profil */
+height: auto;
+gap: -10px; /* Geser foto profil ke atas */
 }
