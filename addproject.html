@@ -151,7 +151,92 @@
 
 
     <div class="container-fluid mt-5">
-    
+        <h5 class="fw-bold my-auto mb-4">Create New Project</h5>
+        <form>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="projectName" class="form-label">Project Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="projectName" required>
+              </div>
+              <div class="col-md-6">
+                <label for="status" class="form-label">Status</label>
+                <select class="form-select" id="status">
+                  <option selected disabled>Choose...</option>
+                  <option value="1">Active</option>
+                  <option value="2">Completed</option>
+                  <option value="3">Pending</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="amount" class="form-label">Amount</label>
+                <input type="number" class="form-control" id="amount">
+              </div>
+              <div class="col-md-6">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" class="form-control" id="location">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="projectManager" class="form-label">Project Manager</label>
+                <select class="form-select" id="projectManager">
+                  <option selected disabled>Choose...</option>
+                  <option value="1">Manager 1</option>
+                  <option value="2">Manager 2</option>
+                  <option value="3">Manager 3</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="projectType" class="form-label">Project Type</label>
+                <select class="form-select" id="projectType">
+                  <option selected disabled>Choose...</option>
+                  <option value="1">Type 1</option>
+                  <option value="2">Type 2</option>
+                  <option value="3">Type 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="customer" class="form-label">Customer</label>
+                <select class="form-select" id="customer">
+                  <option selected disabled>Choose...</option>
+                  <option value="1">Customer 1</option>
+                  <option value="2">Customer 2</option>
+                  <option value="3">Customer 3</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" class="form-control" id="startDate">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="endDate" class="form-label">End Date</label>
+                <input type="date" class="form-control" id="endDate">
+              </div>
+              <div class="col-md-6">
+                <label for="weeklyPeriodStartDate" class="form-label">Weekly Period Start Date</label>
+                <select class="form-select" id="weeklyPeriodStartDate">
+                  <option selected disabled>Choose...</option>
+                  <option value="1">Monday</option>
+                  <option value="2">Tuesday</option>
+                  <option value="3">Wednesday</option>
+                  <option value="4">Thursday</option>
+                  <option value="5">Friday</option>
+                  <option value="6">Saturday</option>
+                  <option value="7">Sunday</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end gap20 align-items-center" id="submitForm">
+              <a href="home.html" class="text-danger">Cancel</a>
+              <button type="submit" class="btn btn-primary rounded-pill">Submit</button>
+            </div>
+        </form>
     </div>
 
     <script src="script.js"></script>

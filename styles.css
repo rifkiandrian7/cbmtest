@@ -163,3 +163,11 @@ text-decoration: none; /* Remove underline */
 .list-group-item a:hover {
 text-decoration: none; /* Ensure no underline on hover */
 }
+
+#submitForm a{
+    text-decoration: none;
+}
+
+#submitForm a:hover{
+    text-decoration: none;
+}
