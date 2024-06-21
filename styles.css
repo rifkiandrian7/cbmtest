@@ -135,13 +135,12 @@
 }
 
 .card-header-custom {
-    background-color: #f1f1f1 !important;
+    background-color: #f1f1f1;
     /* color: var(--bs-primary); */
     border-bottom: 0px solid var(--bs-primary) !important;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
 }
-
 .datediv{
     display: flex;
     align-items: center;
@@ -170,6 +169,7 @@
 }
 
 .cardproject:hover{
+    background-color: #F1F1F1;
     color: #333333;
     text-decoration: none;
 }
