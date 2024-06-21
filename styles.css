@@ -171,3 +171,13 @@ text-decoration: none; /* Ensure no underline on hover */
 #submitForm a:hover{
     text-decoration: none;
 }
+
+.cardproject{
+    color: #333333;
+    text-decoration: none;
+}
+
+.cardproject:hover{
+    color: #333333;
+    text-decoration: none;
+}
