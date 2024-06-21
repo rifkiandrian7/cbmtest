@@ -13,18 +13,15 @@ function togglePassword() {
     }
 }
 
-function toggleColumn() {
-    var leftColumn = document.getElementById('leftColumn');
-    var rightColumn = document.getElementById('rightColumn');
+document.addEventListener('DOMContentLoaded', function() {
+    var triggerTabList = [].slice.call(document.querySelectorAll('#nav-tab a'))
+    triggerTabList.forEach(function(triggerEl) {
+      var tabTrigger = new bootstrap.Tab(triggerEl)
 
-    if (leftColumn.style.display !== 'none') {
-        leftColumn.style.display = 'none';
-        rightColumn.classList.remove('col-lg-4');
-        rightColumn.classList.add('col-lg-12');
-    } else {
-        leftColumn.style.display = 'block';
-        rightColumn.classList.remove('col-lg-12');
-        rightColumn.classList.add('col-lg-4');
-    }
-}
+      triggerEl.addEventListener('click', function(event) {
+        event.preventDefault()
+        tabTrigger.show()
+      })
+    })
+})
 

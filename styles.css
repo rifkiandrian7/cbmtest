@@ -94,7 +94,8 @@
 }
 
 .list-group-item a:hover {
-    text-decoration: underline;
+    color: #333333;
+    text-decoration: none;
 }
 
 .projectMenu{
@@ -155,15 +156,6 @@
     justify-content: center;
 }
 
-.list-group-item a {
-width: 100%;
-text-decoration: none; /* Remove underline */
-}
-
-.list-group-item a:hover {
-text-decoration: none; /* Ensure no underline on hover */
-}
-
 #submitForm a{
     text-decoration: none;
 }
@@ -181,3 +173,36 @@ text-decoration: none; /* Ensure no underline on hover */
     color: #333333;
     text-decoration: none;
 }
+
+/* Horizontal menu modifier */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu a, .menu span {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu a {
+    color: #007bff;
+}
+
+.menu span {
+    color: #6c757d;
+}
+
+.menuTab a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.menuTab a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Horizontal menu modifier */

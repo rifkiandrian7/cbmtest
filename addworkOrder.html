@@ -41,7 +41,7 @@
                 <a class="btn btn-primary dropdown-toggle rounded" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></a>
                 <ul class="dropdown-menu p-0 border-0 mt-2" aria-labelledby="dropdownMenuLink">
                     <li class="list-group-item list-group-item-action">
-                      <a href="home.html" class="d-flex align-items-center no-underline gap20">
+                      <a href="" class="d-flex align-items-center no-underline gap20">
                         <div class="icon-container">
                           <i class="fas fa-clipboard-check fa-lg text-secondary"></i>
                         </div>
@@ -88,7 +88,7 @@
                         Configuration
                       </a>
                     </li>
-                  </ul>
+                </ul>
               </div>
               <h5 class="offcanvas-title mb-0" id="offcanvasSidebarLabel">Apps</h5>
             </div>
@@ -149,130 +149,60 @@
         </div>
     </div>
 
-    <!-- button horizontal -->
-    <div class="container-fluid mt-5">
-      <div class="menu">
-        <a href="home.html">Projects</a>
-        <span class="fw-bold">/</span>
-        <span>Rehabilitasi Pos Pantau Palopo Pemeliharaan</span>
-      </div>
-    </div>
-    <!-- button horizontal -->
-
     <!-- Main Content -->
     <div class="container-fluid mt-5">
-      <ul class="nav nav-pills menuTab" id="nav-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active rounded-pill" id="work-order-tab" data-toggle="tab" href="#work-order" role="tab" aria-controls="work-order" aria-selected="true">Work Order</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link rounded-pill" id="project-health-tab" data-toggle="tab" href="#project-health" role="tab" aria-controls="project-health" aria-selected="false">Project Health</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link rounded-pill" id="cash-flow-tab" data-toggle="tab" href="#cash-flow" role="tab" aria-controls="cash-flow" aria-selected="false">Cash Flow</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link rounded-pill" id="detail-tab" data-toggle="tab" href="#detail" role="tab" aria-controls="detail" aria-selected="false">Detail</a>
-        </li>
-      </ul>
-      <div class="tab-content mt-5" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="work-order" role="tabpanel" aria-labelledby="work-order-tab">
-          <!-- button horizontal -->
-          <div class="mt-5">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center my-3">
-                <div class="d-flex flex-grow-1 justify-content-between projectMenu mb-3 mb-md-0">
-                    <div class="d-flex">
-                        <a class="btn btn-primary rounded-pill me-2" href="addworkOrder.html">
-                            <i class="fas fa-plus me-2"></i> New Work Order
-                        </a>
-                    </div>
-                </div>
-                <div class="d-flex flex-grow-1 justify-content-end projectMenu">
-                    <form class="d-flex me-2">
-                        <div class="input-group">
-                            <input class="form-control border20Left" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-primary border20Right" type="submit"><i class="fas fa-search"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-          </div>    
-          <!-- button horizontal -->
-          <table class="table table-bordered table-striped">
-            <thead class="table-dark">
-                <tr>
-                    <th>No</th>
-                    <th>Title</th>
-                    <th>WO No</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
-                    <th>Payment Status</th>
-                    <th>Value</th>
-                    <th>Progress Status</th>
-                    <th>Progress Complete (%)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Penambahan Sumur dan Pompa</td>
-                    <td>WO-2024-001</td>
-                    <td>01-06-2024</td>
-                    <td>30-06-2024</td>
-                    <td>PAID</td>
-                    <td>Rp.100,000,000.00</td>
-                    <td>Selesai</td>
-                    <td>100.00%</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Perbaikan Jembatan</td>
-                    <td>WO-2024-002</td>
-                    <td>03-06-2024</td>
-                    <td>07-06-2024</td>
-                    <td>UNPAID</td>
-                    <td>Rp.65,000,000.00</td>
-                    <td>Selesai</td>
-                    <td>100.00%</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Pengadaan Peralatan Kantor</td>
-                    <td>WO-2024-003</td>
-                    <td>17-06-2024</td>
-                    <td>28-06-2024</td>
-                    <td>UNPAID</td>
-                    <td>Rp.15,000,000.00</td>
-                    <td>Uji Fungsi</td>
-                    <td>85.00%</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Perbaikan jaringan CCTV</td>
-                    <td>WO-2024-004</td>
-                    <td>24-06-2024</td>
-                    <td>31-07-2024</td>
-                    <td>UNPAID</td>
-                    <td>Rp.25,000,000.00</td>
-                    <td>Analisis & Desain</td>
-                    <td>18.00%</td>
-                </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="tab-pane fade" id="project-health" role="tabpanel" aria-labelledby="project-health-tab">
-          <h3>Project Health</h3>
-          <p>Content for Project Health.</p>
-        </div>
-        <div class="tab-pane fade" id="cash-flow" role="tabpanel" aria-labelledby="cash-flow-tab">
-          <h3>Cash Flow</h3>
-          <p>Content for Cash Flow.</p>
-        </div>
-        <div class="tab-pane fade" id="detail" role="tabpanel" aria-labelledby="detail-tab">
-          <h3>Detail</h3>
-          <p>Content for Detail.</p>
-        </div>
-      </div>
+      <h5 class="fw-bold my-auto mb-4">Create Work Order</h5>
+      <form>
+          <div class="row mb-3">
+              <div class="col-md-6">
+                  <label for="projectName" class="form-label">Title <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="title" required>
+              </div>
+              <div class="col-md-6">
+                  <label for="woNo" class="form-label">Wo No</label>
+                  <input type="number" class="form-control" id="woNo">
+              </div>
+          </div>
+          <div class="row mb-3">
+              <div class="col-md-6">
+                  <label for="projectName" class="form-label">Start Date <span class="text-danger">*</span></label>
+                  <input type="date" class="form-control" id="startDate" required>
+              </div>
+              <div class="col-md-6">
+                  <label for="projectName" class="form-label">End Date <span class="text-danger">*</span></label>
+                  <input type="date" class="form-control" id="endDate" required>
+              </div>
+          </div>
+          <div class="row mb-3">
+              <div class="col-md-6">
+                  <label for="paymentStatus" class="form-label">Payment Status</label>
+                  <select class="form-select" id="paymentStatus">
+                      <option value="paid">Paid</option>
+                      <option value="unpaid">Unpaid</option>
+                  </select>
+              </div>
+              <div class="col-md-6">
+                  <label for="value" class="form-label">Value</label>
+                  <input type="number" class="form-control" id="value">
+              </div>
+          </div>
+          <div class="row mb-3">
+              <div class="col-md-6">
+                  <label for="status" class="form-label">Status</label>
+                  <select class="form-select" id="status">
+                      <!-- Tambahkan opsi status yang relevan di sini -->
+                      <option value="open">Open</option>
+                      <option value="in-progress">In Progress</option>
+                      <option value="completed">Completed</option>
+                      <option value="closed">Closed</option>
+                  </select>
+              </div>
+          </div>
+          <div class="d-flex justify-content-end gap-2 align-items-center" id="submitForm">
+              <a href="palopo.html" class="text-danger">Cancel</a>
+              <button type="submit" class="btn btn-primary rounded-pill">Submit</button>
+          </div>
+      </form>
     </div>
     <!-- Main Content -->
 
