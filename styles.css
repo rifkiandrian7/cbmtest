@@ -208,8 +208,8 @@
 /* Horizontal menu modifier */
 
 .chart-container {
-    width: 800px;  /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
+    width: 750px;  /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
     margin: auto;
 }
 canvas {
