@@ -176,7 +176,11 @@
           <a class="nav-link" id="detail-tab" data-toggle="tab" href="#detail" role="tab" aria-controls="detail" aria-selected="false">Detail</a>
         </li>
       </ul>
+
+      <!-- Tab Content -->
       <div class="tab-content mt-5" id="nav-tabContent">
+
+        <!-- Work Order Tab -->
         <div class="tab-pane fade show active" id="work-order" role="tabpanel" aria-labelledby="work-order-tab">
 
           <!-- Button horizontal -->
@@ -223,10 +227,10 @@
                     <td>WO-2024-001</td>
                     <td>01-06-2024</td>
                     <td>30-06-2024</td>
-                    <td>PAID</td>
+                    <td><span><i class="fas fa-circle text-success"></i> Paid</span></td>
                     <td>Rp.100,000,000.00</td>
                     <td>Selesai</td>
-                    <td>100.00%</td>
+                    <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 100%;">100.00%</div></div></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -234,10 +238,10 @@
                     <td>WO-2024-002</td>
                     <td>03-06-2024</td>
                     <td>07-06-2024</td>
-                    <td>UNPAID</td>
+                    <td><span><i class="fas fa-circle text-danger"></i> Unpaid</span></td>
                     <td>Rp.65,000,000.00</td>
                     <td>Selesai</td>
-                    <td>100.00%</td>
+                    <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 100%;">100.00%</div></div></td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -245,10 +249,10 @@
                     <td>WO-2024-003</td>
                     <td>17-06-2024</td>
                     <td>28-06-2024</td>
-                    <td>UNPAID</td>
+                    <td><span><i class="fas fa-circle text-danger"></i> Unpaid</span></td>
                     <td>Rp.15,000,000.00</td>
                     <td>Uji Fungsi</td>
-                    <td>85.00%</td>
+                    <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 85%;">85.00%</div></div></td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -256,24 +260,30 @@
                     <td>WO-2024-004</td>
                     <td>24-06-2024</td>
                     <td>31-07-2024</td>
-                    <td>UNPAID</td>
+                    <td><span><i class="fas fa-circle text-danger"></i> Unpaid</span></td>
                     <td>Rp.25,000,000.00</td>
                     <td>Analisis & Desain</td>
-                    <td>18.00%</td>
+                    <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 18%;">18.00%</div></div></td>
                 </tr>
             </tbody>
           </table>
           <!-- Tabel Work Order -->
            
         </div>
+
+        <!-- Project Health Tab -->
         <div class="tab-pane fade" id="project-health" role="tabpanel" aria-labelledby="project-health-tab">
           <h3>Project Health</h3>
           <p>Content for Project Health.</p>
         </div>
+
+        <!-- Cash Flow Tab -->
         <div class="tab-pane fade" id="cash-flow" role="tabpanel" aria-labelledby="cash-flow-tab">
           <h3>Cash Flow</h3>
           <p>Content for Cash Flow.</p>
         </div>
+
+        <!-- Detail Tab -->
         <div class="tab-pane fade" id="detail" role="tabpanel" aria-labelledby="detail-tab">
           <!-- Project Detail -->
             <h5 class="fw-bold my-auto mb-4">Project Info</h5>
@@ -331,7 +341,17 @@
             </table>
             <button class="btn btn-outline-primary rounded-pill"><i class="bi bi-people"></i> Add Employee</button>
         </div>
+
       </div>
+
+      <!-- Pagination -->
+      <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-end">
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+      
     </div>
     <!-- Main Content -->
 

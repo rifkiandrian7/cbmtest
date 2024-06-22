@@ -185,6 +185,7 @@
 
     <!-- Main Content -->
     <div class="container-fluid mt-5">
+        <!-- Tabel -->
         <table class="table table-bordered table-striped">
           <thead class="table-dark">
               <tr>
@@ -205,7 +206,7 @@
                   <td>Kemenhub</td>
                   <td>-</td>
                   <td>-</td>
-                  <td>75.75%</td>
+                  <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 75.75%;">75.75%</div></div></td>
               </tr>
               <tr>
                   <td>2</td>
@@ -214,7 +215,7 @@
                   <td>Kemenkeu</td>
                   <td>-</td>
                   <td>-</td>
-                  <td>52.00%</td>
+                  <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 52%;">52.00%</div></div></td>
               </tr>
               <tr>
                   <td>3</td>
@@ -223,7 +224,7 @@
                   <td>PUPR</td>
                   <td>-</td>
                   <td>-</td>
-                  <td>92.00%</td>
+                  <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 92%;">92.00%</div></div></td>
               </tr>
               <tr>
                   <td>4</td>
@@ -232,15 +233,19 @@
                   <td>Kemdikbud</td>
                   <td>-</td>
                   <td>-</td>
-                  <td>15.00%</td>
+                  <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 15%;">15.00%</div></div></td>
               </tr>
           </tbody>
         </table>
+
+        <!-- Pagination -->
         <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center">
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            </ul>
+          <ul class="pagination justify-content-end">
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+          </ul>
         </nav>
+         
     </div>
     
     <!-- Main Content -->

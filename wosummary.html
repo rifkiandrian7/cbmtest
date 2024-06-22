@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Include Chart.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>CBM Test</title>
   </head>
@@ -182,25 +184,163 @@
 
       <!-- Tab content -->
       <div class="tab-content mt-5" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="work-order" role="tabpanel" aria-labelledby="work-order-tab">
 
-            <h3>Summary</h3>
-            <p>Content for Summary.</p>
-           
+        <!-- Work Order Tab -->
+        <div class="tab-pane fade show active" id="work-order" role="tabpanel" aria-labelledby="work-order-tab">
+          <!-- Work Order Content -->
+
+          <!-- Chart Canvas -->
+          <div class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <!-- Script chart -->
+          <script>
+              var ctx = document.getElementById('myChart').getContext('2d');
+              var myChart = new Chart(ctx, {
+                  type: 'bar',  // Change to 'bar' for bar chart
+                  data: {
+                      labels: ['02-06-2024', '09-06-2024', '16-06-2024', '23-06-2024', '30-06-2024'],
+                      datasets: [
+                          {
+                              label: 'Plan',
+                              data: [0, 0, 100, 100, 100],
+                              backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                              borderColor: 'rgba(54, 162, 235, 1)',
+                              borderWidth: 2,
+                              borderRadius: 5,  // Border radius for bar chart
+                              fill: false,  // Disable fill for line chart
+                          },
+                          {
+                              label: 'Actual',
+                              data: [0, 0, 0, 40, 40],
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              borderRadius: 5,  // Border radius for bar chart
+                              fill: false,  // Disable fill for line chart
+                          }
+                      ]
+                  },
+                  options: {
+                      scales: {
+                          y: {
+                              beginAtZero: true,
+                              max: 100  // Set max value for y-axis
+                          }
+                      }
+                  }
+              });
+          </script>
+
+          <!-- Tabel activity -->
+          <table class="table table-bordered mt-5">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Activity Name</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Progress Complete (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="custom-striped">
+                <td class="fw-bold">PENAMBAHAN SUMUR DAN POMPA</td>
+                <td>10-06-2024</td>
+                <td>14-06-2024</td>
+                <td><span><i class="fas fa-circle text-danger"></i> Delay</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 38%;">38.00%</div></div></td>
+              </tr>
+              <tr class="custom-striped">
+                <td class="fw-bold">PERENCANAAN</td>
+                <td>10-06-2024</td>
+                <td>10-06-2024</td>
+                <td><span><i class="fas fa-circle text-success"></i> On Track</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 100%;">100.00%</div></div></td>
+              </tr>
+              <tr>
+                <td><span class="mx-3">Survey Lokasi</span></td>
+                <td>10-06-2024</td>
+                <td>10-06-2024</td>
+                <td><span><i class="fas fa-circle text-success"></i> On Track</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 100%;">100.00%</div></div></td>
+              </tr>
+              <tr class="custom-striped">
+                <td class="fw-bold">PENGERJAAN</td>
+                <td>11-06-2024</td>
+                <td>13-06-2024</td>
+                <td><span><i class="fas fa-circle text-danger"></i> Delay</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 30%;">30.00%</div></div></td>
+              </tr>
+              <tr>
+                <td><span class="mx-3">Penggalian Sumur</span></td>
+                <td>11-06-2024</td>
+                <td>12-06-2024</td>
+                <td><span><i class="fas fa-circle text-danger"></i> Delay</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 40%;">40.00%</div></div></td>
+              </tr>
+              <tr>
+                <td><span class="mx-3">Pembelian Pompa</span></td>
+                <td>11-06-2024</td>
+                <td>11-06-2024</td>
+                <td><span><i class="fas fa-circle text-danger"></i> Delay</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 50%;">50.00%</div></div></td>
+              </tr>
+              <tr>
+                <td><span class="mx-3">Pemasangan Pompa</span></td>
+                <td>13-06-2024</td>
+                <td>13-06-2024</td>
+                <td><span><i class="fas fa-circle text-danger"></i> Delay</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 0%;">0.00%</div></div></td>
+              </tr>
+              <tr class="custom-striped">
+                <td class="fw-bold">TESTING</td>
+                <td>14-06-2024</td>
+                <td>14-06-2024</td>
+                <td><span><i class="fas fa-circle text-danger"></i> Delay</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 0%;">0.00%</div></div></td>
+              </tr>
+              <tr>
+                <td><span class="mx-3">Uji Fungsi</span></td>
+                <td>14-06-2024</td>
+                <td>14-06-2024</td>
+                <td><span><i class="fas fa-circle text-danger"></i> Delay</span></td>
+                <td><div class="progress rounded-pill"><div class="progress-bar bg-success" role="progressbar" style="width: 0%;">0.00%</div></div></td>
+              </tr>
+              <!-- Add more rows here -->
+            </tbody>
+          </table>
+
+          <!-- Pagination -->
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-end">
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+
         </div>
+
+        <!-- Project Health Tab -->
         <div class="tab-pane fade" id="project-health" role="tabpanel" aria-labelledby="project-health-tab">
             <h3>Input Plan</h3>
             <p>Content for Input Plan.</p>
         </div>
+
+        <!-- Cash Flow Tab -->
         <div class="tab-pane fade" id="cash-flow" role="tabpanel" aria-labelledby="cash-flow-tab">
             <h3>Daily Report</h3>
             <p>Content for Daily Report.</p>
         </div>
+
+        <!-- Detail Tab -->
         <div class="tab-pane fade" id="detail" role="tabpanel" aria-labelledby="detail-tab">
             <h3>Detail</h3>
             <p>Content for Detail.</p>
 
         </div>
+
       </div>
       <!-- Tab content -->
 

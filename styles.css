@@ -206,3 +206,17 @@
 }
 
 /* Horizontal menu modifier */
+
+.chart-container {
+    width: 800px;  /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin: auto;
+}
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.custom-striped {
+    background-color: #f2f2f2 !important; /* Warna striping default Bootstrap */
+  }
