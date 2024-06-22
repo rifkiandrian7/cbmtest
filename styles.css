@@ -219,4 +219,13 @@ canvas {
 
 .custom-striped {
     background-color: #f2f2f2 !important; /* Warna striping default Bootstrap */
-  }
+}
+
+.move-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+  .move-buttons button {
+    margin-bottom: 2px;
+}
