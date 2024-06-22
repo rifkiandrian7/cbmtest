@@ -141,6 +141,20 @@
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
 }
+
+.card-header-custom {
+    background-color: #f1f1f1;
+    /* color: var(--bs-primary); */
+    border-bottom: 0px solid var(--bs-primary) !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.card-header-custom2 {
+    background-color: none !important;
+    border-bottom: 0px !important;
+}
+
 .datediv{
     display: flex;
     align-items: center;
@@ -166,6 +180,10 @@
 .cardproject{
     color: #333333;
     text-decoration: none;
+}
+
+cardproject2{
+    border: 0px !important;
 }
 
 .cardproject:hover{
@@ -229,3 +247,4 @@ canvas {
   .move-buttons button {
     margin-bottom: 2px;
 }
+

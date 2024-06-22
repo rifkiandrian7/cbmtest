@@ -157,10 +157,10 @@
                     <a class="btn btn-primary rounded-pill me-2" href="addproject.html">
                         <i class="fas fa-plus me-2"></i> New Project
                     </a>
-                    <button class="btn btn-primary rounded-pill me-2">
+                    <button class="btn btn-outline-primary rounded-pill me-2">
                         <i class="fas fa-file-excel me-2"></i> Export to XLS
                     </button>
-                    <button class="btn btn-primary rounded-pill">
+                    <button class="btn btn-outline-primary rounded-pill">
                         <i class="fas fa-file-csv me-2"></i> Export to CSV
                     </button>
                 </div>
@@ -183,169 +183,261 @@
     </div>    
     <!-- button horizontal -->
 
+
     <!-- Main Content -->
     <div class="container-fluid mt-5">
-        <div class="row">
-
-            <!-- Column 1 -->
-            <div class="col-lg-3">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="d-flex gap10">
-                        <span>
-                            <i class="fas fa-cogs text-primary"></i>
-                        </span>
-                        <h5 class="fw-bold">Implementasi</h5>
-                        <div class="border px-2 my-auto rounded mb-1">1</div>
+      
+      <div class="row justify-content-center">
+            <h5 class="fw-bold mb-4">Recent Project</h5>
+            <!-- Horizontal Projects -->
+            <div class="row px-0">
+              <!-- Project 1 -->
+              <div class="col-12 col-md-4 mb-4">
+                <div class="card flex-fill border20 recentcard1 text-white" style="background-color:#5051f9; height: 200px;">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                      Operation & Maintenance
+                      <button type="button" class="btn btn-outline-light btn-sm rounded-pill">Detail</button>
                     </div>
-                    <button class="btn btn-outline-secondary rounded-pill">New</button>
+                    <p>Perbaikan Sarana RPTRA Rawa Buaya</p>
+                    <div class="row">
+                      <div class="col-4 d-flex align-items-center gap10">
+                          <i class="fas fa-user-circle fa-lg text-light"></i>
+                          <span class="ml-2 fw-bold">5 People</span>
+                      </div>
+                      <div class="col-4 d-flex align-items-center gap10">
+                        <i class="fas fa-tasks fa-lg text-light"></i>
+                        <span class="ml-2 fw-bold">15 Task</span>
+                      </div>
+                      <div class="col-4 d-flex align-items-center justify-content-end gap10">
+                          <i class="fas fa-calendar fa-lg text-light"></i>
+                          <span class="ml-2 fw-bold">29 Oktober 2024</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <a class="card mb-3 border20 cardproject" href="">
-                    <div class="card-header card-header-custom">Operation & Maintenance</div>
-                    <div class="card-body">
+              </div>
+          
+              <!-- Project 2 -->
+              <div class="col-12 col-md-4 mb-4">
+                <div class="card flex-fill border20 recentcard1 text-white" style="background-color: #1da7ff; height: 200px;">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                      Operation & Maintenance
+                      <button type="button" class="btn btn-outline-light btn-sm rounded-pill">Detail</button>
+                    </div>
+                    <p>Perbaikan Sarana RPTRA Petukangan</p>
+                    <div class="row">
+                      <div class="col-4 d-flex align-items-center gap10">
+                          <i class="fas fa-user-circle fa-lg text-light"></i>
+                          <span class="ml-2 fw-bold">7 People</span>
+                      </div>
+                      <div class="col-4 d-flex align-items-center gap10">
+                        <i class="fas fa-tasks fa-lg text-light"></i>
+                        <span class="ml-2 fw-bold">9 Task</span>
+                      </div>
+                      <div class="col-4 d-flex align-items-center justify-content-end gap10">
+                          <i class="fas fa-calendar fa-lg text-light"></i>
+                          <span class="ml-2 fw-bold">29 Oktober 2024</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Project 3 -->
+              <div class="col-12 col-md-4 mb-4">
+                <div class="card flex-fill border20 recentcard1 text-white" style="background-color:#ff8a00; height: 200px;">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                      Operation & Maintenance
+                      <button type="button" class="btn btn-outline-light btn-sm rounded-pill">Detail</button>
+                    </div>
+                    <p>Perbaikan Sarana RPTRA Joglo</p>
+                    <div class="row">
+                      <div class="col-4 d-flex align-items-center gap10">
+                          <i class="fas fa-user-circle fa-lg text-light"></i>
+                          <span class="ml-2 fw-bold">2 People</span>
+                      </div>
+                      <div class="col-4 d-flex align-items-center gap10">
+                        <i class="fas fa-tasks fa-lg text-light"></i>
+                        <span class="ml-2 fw-bold">5 Task</span>
+                      </div>
+                      <div class="col-4 d-flex align-items-center justify-content-end gap10">
+                          <i class="fas fa-calendar fa-lg text-light"></i>
+                          <span class="ml-2 fw-bold">29 Oktober 2024</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          
+
+          <!-- Vertical Projects and Task Schedule -->
+          <div class="row px-0">
+              <!-- Column 1: Vertical Projects -->
+              <div class="col-md-8 col-lg-8">
+
+                    <!-- judul -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div class="d-flex gap10">
+                          <span>
+                              <i class="fas fa-wrench  text-primary"></i>
+                          </span>
+                          <h5 class="fw-bold">Pemeliharaan</h5>
+                      </div>
+                      <button class="btn btn-outline-secondary rounded-pill">New</button>
+                    </div>
+                    <!-- project 1.1 -->
+                    <a class="card flex-fill border20 mb-2 cardproject" style="height: 200px;" href="palopo.html">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="card-title d-flex justify-content-between align-items-center">
+                          <span class="">Operation & Maintenance</span>
+                          <div class="progress rounded-pill w-25"><div class="progress-bar bg-success" role="progressbar" style="width: 75.75%;">75.75%</div></div>
+                        </div>
+                        <p>Rehabilitasi Pos Pantau Palopo</p>
+                        <div class="row">
+                          <div class="col-4 d-flex align-items-center gap10">
+                              <i class="fas fa-user-circle fa-lg text-primary"></i>
+                              <span class="ml-2 fw-bold">2 People</span>
+                          </div>
+                          <div class="col-4 d-flex align-items-center gap10">
+                            <i class="fas fa-tasks fa-lg text-primary"></i>
+                            <span class="ml-2 fw-bold">5 Task</span>
+                          </div>
+                          <div class="col-4 d-flex align-items-center justify-content-end gap10">
+                              <i class="fas fa-calendar fa-lg text-primary"></i>
+                              <span class="ml-2 fw-bold">29 Oktober 2024</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- project 1.1 -->
+                    <a class="card flex-fill border20 mb-2 cardproject" style="height: 200px;" href="">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="card-title d-flex justify-content-between align-items-center">
+                          <span class="">Operation & Maintenance</span>
+                          <div class="progress rounded-pill w-25"><div class="progress-bar bg-success" role="progressbar" style="width: 15.00%;">15.700%</div></div>
+                        </div>
+                        <p>Rehab PAUD, Mess Rektor, dan Pagar Mess UNIB</p>
+                        <div class="row">
+                          <div class="col-4 d-flex align-items-center gap10">
+                              <i class="fas fa-user-circle fa-lg text-primary"></i>
+                              <span class="ml-2 fw-bold">2 People</span>
+                          </div>
+                          <div class="col-4 d-flex align-items-center gap10">
+                            <i class="fas fa-tasks fa-lg text-primary"></i>
+                            <span class="ml-2 fw-bold">5 Task</span>
+                          </div>
+                          <div class="col-4 d-flex align-items-center justify-content-end gap10">
+                              <i class="fas fa-calendar fa-lg text-primary"></i>
+                              <span class="ml-2 fw-bold">29 Oktober 2024</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- judul -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 mt-5">
+                      <div class="d-flex gap10">
+                          <span>
+                              <i class="fas fa-cog text-primary"></i>
+                          </span>
+                          <h5 class="fw-bold">Implementasi</h5>
+                      </div>
+                      <button class="btn btn-outline-secondary rounded-pill">New</button>
+                    </div>
+                    <!-- project 2.1 -->
+                    <a class="card flex-fill border20 mb-2 cardproject" style="height: 200px;" href="">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="card-title d-flex justify-content-between align-items-center">
+                          <span class="">Capital Based</span>
+                          <div class="progress rounded-pill w-25"><div class="progress-bar bg-success" role="progressbar" style="width: 52.00%;">52.00%</div></div>
+                        </div>
                         <p>Pengadaan Kontruksi Renovasi Rumah Dinas KPP Pratama Sintang</p>
-                        <div class="row align-items-center">
-                            <div class="col-4 d-flex align-items-center gap10">
-                                <i class="fas fa-user-circle fa-lg text-info"></i>
-                                <span class="ml-2 fw-bold">5 People</span>
-                            </div>
-                            <div class="col-8 d-flex align-items-center justify-content-end gap10">
-                                <i class="fas fa-calendar fa-lg text-info"></i>
-                                <span class="ml-2 fw-bold">29 Oktober 2024</span>
-                            </div>
-                        </div>               
-                    </div>
-                </a>
-            </div>
+                        <div class="row">
+                          <div class="col-4 d-flex align-items-center gap10">
+                              <i class="fas fa-user-circle fa-lg text-primary"></i>
+                              <span class="ml-2 fw-bold">2 People</span>
+                          </div>
+                          <div class="col-4 d-flex align-items-center gap10">
+                            <i class="fas fa-tasks fa-lg text-primary"></i>
+                            <span class="ml-2 fw-bold">5 Task</span>
+                          </div>
+                          <div class="col-4 d-flex align-items-center justify-content-end gap10">
+                              <i class="fas fa-calendar fa-lg text-primary"></i>
+                              <span class="ml-2 fw-bold">29 Oktober 2024</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
 
-            <!-- Column 2 -->
-            <div class="col-lg-3">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="d-flex gap10">
-                        <span>
-                            <i class="fas fa-check text-primary"></i>
-                        </span>
-                        <h5 class="fw-bold">Uji Fungsi</h5>
-                        <div class="border px-2 my-auto rounded mb-1">1</div>
+                    <!-- judul -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 mt-5">
+                      <div class="d-flex gap10">
+                          <span>
+                              <i class="fas fa-check text-primary"></i>
+                          </span>
+                          <h5 class="fw-bold">Uji Fungsi</h5>
+                      </div>
+                      <button class="btn btn-outline-secondary rounded-pill">New</button>
                     </div>
-                    <button class="btn btn-outline-secondary rounded-pill">New</button>
-                </div>
-                <a class="card mb-3 border20 cardproject" href="">
-                    <div class="card-header card-header-custom">Capital Based</div>
-                    <div class="card-body">
+                    <!-- project 3 -->
+                    <a class="card flex-fill border20 mb-2 cardproject" style="height: 200px;" href="">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="card-title d-flex justify-content-between align-items-center">
+                          <span class="">Capital Based</span>
+                          <div class="progress rounded-pill w-25"><div class="progress-bar bg-success" role="progressbar" style="width: 52.00%;">52.00%</div></div>
+                        </div>
                         <p>Pembangunan Reservoir SPAM Kota Manado(NUWSP)</p>
-                        <div class="row align-items-center">
-                            <div class="col-4 d-flex align-items-center gap10">
-                                <i class="fas fa-user-circle fa-lg text-info"></i>
-                                <span class="ml-2 fw-bold">8 People</span>
-                            </div>
-                            <div class="col-8 d-flex align-items-center justify-content-end gap10">
-                                <i class="fas fa-calendar fa-lg text-info"></i>
-                                <span class="ml-2 fw-bold">21 Juni 2024</span>
-                            </div>
-                        </div>               
-                    </div>
-                </a>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="col-lg-3">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="d-flex gap10">
-                        <span>
-                            <i class="fas fa-wrench text-primary"></i>
-                        </span>
-                        <h5 class="fw-bold">Pemeliharaan</h5>
-                        <div class="border px-2 my-auto rounded mb-1">2</div>
-                    </div>
-                    <button class="btn btn-outline-secondary rounded-pill">New</button>
-                </div>
-                <a class="card mb-3 border20 cardproject" href="">
-                    <div class="card-header card-header-custom">Operation & Maintenance</div>
-                    <div class="card-body">
-                        <p>Rehab PAUD, Mess Rektor, dari Pagar Mess UNIB</p>
-                        <div class="row align-items-center">
-                            <div class="col-4 d-flex align-items-center gap10">
-                                <i class="fas fa-user-circle fa-lg text-info"></i>
-                                <span class="ml-2 fw-bold">8 People</span>
-                            </div>
-                            <div class="col-8 d-flex align-items-center justify-content-end gap10">
-                                <i class="fas fa-calendar fa-lg text-info"></i>
-                                <span class="ml-2 fw-bold">21 Juni 2024</span>
-                            </div>
-                        </div>               
-                    </div>
-                </a>
-                <a class="card mb-3 border20 cardproject" href="palopo.html">
-                  <div class="card-header card-header-custom">Captial Based</div>
-                  <div class="card-body">
-                      <p>Rehabilitasi Pos Pantau Palopo</p>
-                      <div class="row align-items-center">
+                        <div class="row">
                           <div class="col-4 d-flex align-items-center gap10">
-                              <i class="fas fa-user-circle fa-lg text-info"></i>
-                              <span class="ml-2 fw-bold">-</span>
+                              <i class="fas fa-user-circle fa-lg text-primary"></i>
+                              <span class="ml-2 fw-bold">2 People</span>
                           </div>
-                          <div class="col-8 d-flex align-items-center justify-content-end gap10">
-                              <i class="fas fa-calendar fa-lg text-info"></i>
-                              <span class="ml-2 fw-bold">21 Juni 2024</span>
-                          </div>
-                      </div>               
-                  </div>
-                </a>
-
-            </div>
-
-            <!-- Column 4 -->
-            <div class="col-lg-3">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="d-flex gap10">
-                        <span>
-                            <i class="fas fa-flag-checkered text-primary"></i>
-                        </span>
-                        <h5 class="fw-bold">Selesai</h5>
-                        <div class="border px-2 my-auto rounded mb-1">2</div>
-                    </div>
-                    <button class="btn btn-outline-secondary rounded-pill">New</button>
-                </div>
-                <a class="card mb-3 border20 cardproject" href="">
-                  <div class="card-header card-header-custom">Maintenance</div>
-                  <div class="card-body">
-                      <p>Renovasi RPTRA Rawa Buaya</p>
-                      <div class="row align-items-center">
                           <div class="col-4 d-flex align-items-center gap10">
-                              <i class="fas fa-user-circle fa-lg text-info"></i>
-                              <span class="ml-2 fw-bold">9 People</span>
+                            <i class="fas fa-tasks fa-lg text-primary"></i>
+                            <span class="ml-2 fw-bold">5 Task</span>
                           </div>
-                          <div class="col-8 d-flex align-items-center justify-content-end gap10">
-                              <i class="fas fa-calendar fa-lg text-info"></i>
+                          <div class="col-4 d-flex align-items-center justify-content-end gap10">
+                              <i class="fas fa-calendar fa-lg text-primary"></i>
                               <span class="ml-2 fw-bold">29 Oktober 2024</span>
                           </div>
-                      </div>               
-                  </div>
-                </a>
-                <a class="card mb-3 border20 cardproject" href="">
-                  <div class="card-header card-header-custom">Maintenance</div>
-                  <div class="card-body">
-                      <p>Memperbaiki sarana dan prasarana RPTRA Rawa Buaya</p>
-                      <div class="row align-items-center">
-                          <div class="col-4 d-flex align-items-center gap10">
-                              <i class="fas fa-user-circle fa-lg text-info"></i>
-                              <span class="ml-2 fw-bold">3 People</span>
-                          </div>
-                          <div class="col-8 d-flex align-items-center justify-content-end gap10">
-                              <i class="fas fa-calendar fa-lg text-info"></i>
-                              <span class="ml-2 fw-bold">29 Oktober 2024</span>
-                          </div>
-                      </div>               
-                  </div>
-                </a>              
-            </div>
+                        </div>
+                      </div>
+                    </a>
+                  
+              </div>
 
-            <!-- Column 5 -->
-            <div class="col-lg-3">
-                <button class="btn btn-outline-primary rounded-pill">Add Another Status</button>
-            </div>
-            
-        </div>
+              <!-- Column 2: Task Schedule -->
+              <div class="col-md-4 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title">Task Schedule</h5>
+                          <div class="mb-3">
+                              <h6 class="fw-bold">25 November 2023</h6>
+                              <ul class="list-unstyled">
+                                  <li class="d-flex justify-content-between align-items-center">
+                                      <span>Meeting with Jon Son (UX Audit)</span>
+                                      <span class="badge bg-primary">03:00 PM</span>
+                                  </li>
+                                  <li class="d-flex justify-content-between align-items-center">
+                                      <span>Meeting with Davite (App Design)</span>
+                                      <span class="badge bg-primary">02:00 PM</span>
+                                  </li>
+                                  <li class="d-flex justify-content-between align-items-center">
+                                      <span>Meeting at Office (Team Development)</span>
+                                      <span class="badge bg-primary">02:00 PM</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>    
     </div>
     <!-- Main Content -->
 
